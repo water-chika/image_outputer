@@ -10,7 +10,7 @@ namespace water {
 		std::cout << "P3" << std::endl;
 		std::cout << width << ' ' << height << std::endl;
 		std::cout << "255" << std::endl;
-		std::vector<water::vec3> image_data(width* height);
+		std::vector<std::tuple<double,double,double>> image_data(width* height);
 		std::vector<std::pair<uint32_t, uint32_t>> coords(width * height);
 
 		for (uint32_t j = 0; j < height; j++) {
